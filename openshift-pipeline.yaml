@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineResource
+metadata:
+  name: openshift-pipeline-demo-project-source
+spec:
+  type: git
+  params:
+    - name: revision
+      value: develop
+    - name: url
+      value: https://
